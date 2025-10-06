@@ -260,7 +260,7 @@ export default function WorldMap() {
               <ListGroup.Item><strong>Longitude:</strong> {selectedDevice.longitude}</ListGroup.Item>
 
               <hr />
-              <h6>Dados de Leitura:</h6>
+              <h6>Dados de Leitura: (PPM)</h6>
 
               {sensorIsLoading ? (
                 <ListGroup.Item className="text-primary">Carregando dados do sensor...</ListGroup.Item>
