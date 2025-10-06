@@ -24,7 +24,6 @@ const Sobre = () => {
             solucaoTitulo: "Nossa Solução",
             solucaoTexto: "Protótipo com sensor MQ-9 e microcontrolador ESP32 para medir CO em PPM. Dados enviados para banco e apresentados em mapa interativo (Bom, Médio, Ruim). Sistema escalável para outros gases e integrado à API OpenAQ, permitindo comparação global e validação.",
             repoTitulo: "Links para o repositorio GitHub",
-      repoTexto: "https://github.com/leandro-ramos-cardoso/iot | https://github.com/leandro-ramos-cardoso/frontend-ecoair | https://github.com/leandro-ramos-cardoso/backend-ecoair",
             impactoTitulo: "Impacto e Benefícios",
             impactoLista: [
                 "Monitoramento em tempo real da qualidade do ar",
@@ -47,8 +46,6 @@ const Sobre = () => {
       solucaoTitulo: "Our Solution",
       solucaoTexto: "Prototype using MQ-9 sensor and ESP32 microcontroller to measure CO in PPM. Data sent to a database and displayed on an interactive map (Good, Medium, Poor). Scalable system for other gases and integrated with OpenAQ API for global comparison and validation.",
       repoTitulo: "Links to Repository GitHub",
-      repoTexto: "https://github.com/leandro-ramos-cardoso/iot | https://github.com/leandro-ramos-cardoso/frontend-ecoair | https://github.com/leandro-ramos-cardoso/backend-ecoair",
-      impactoTitulo: "Impact and Benefits",
       impactoLista: [
         "Real-time air quality monitoring",
         "Accessible and low-cost tool",
@@ -110,7 +107,11 @@ const Sobre = () => {
         <Card bg="secundary" className="shadow-sm mb-3">
             <Card.Body>
               <Card.Title className="text-primary">{t.repoTitulo}</Card.Title>
-              <Card.Text>{t.repoTexto}</Card.Text>
+              <Card.Text>
+                <a href='https://github.com/leandro-ramos-cardoso/iot' target='_blank'>https://github.com/leandro-ramos-cardoso/iot</a><br/>
+                <a href='https://github.com/RafaelSLL/frontend-ecoair' target='_blank'>https://github.com/RafaelSLL/frontend-ecoair</a><br/>
+                <a href='https://github.com/leandro-ramos-cardoso/backend-ecoair' target='_blank'>https://github.com/leandro-ramos-cardoso/backend-ecoair</a><br/>
+              </Card.Text>
             </Card.Body>
           </Card>
 
